@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,400&family=Potta+One&family=Roboto&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+/* html,body{
+      font-size: 62.5%;
+} */
+
+body{
+      font-size: 1.6rem;
+      /* background-color: rgb(167, 158, 158); */
+      padding-bottom: 100px;
+}
+
+
+.container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+}
+
+.search{
+      display: flex;
+      width: 50%;
+      max-width: 78rem;
+}
+
+.search input{
+      padding: 0.5rem 1rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      border: 1px solid #000;
+      font-size: 1rem;
+      /* color: green; */
+      border-radius: 5px;
+}
+
+ .search input:focus-visible{
+      outline: 1px solid purple;
+ }
+
+.primary-btn{
+      background-color: #800080;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      outline: none;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-left: 2px;
+      border-radius: 5px;
+}
+
+.primary-btn:hover{
+      background: rgb(61, 5, 61);
+      /* color: #fff; */
+}
+
+.primary-btn:active{
+      background-color: rgba(231,59,231,0.788);
+}
+
+
+
+/* For Card */
+
+#profileContainer{
+      width: 100%;
+}
+
+.profile-box{
+      margin: auto;
+      padding: 4rem 2rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      width: 60%;
+      max-width: 78rem;
+      /* height: 88vh; */
+}
+
+.profile-box:hover{
+      transform: rotate(-4.5deg) scale(1.01);
+      transition: 0.5s ease-in;
+}
+
+
+
+.top-section{
+      display: flex;
+      justify-content: space-between;
+}
+
+
+.top-section button{
+     margin-left: 10rem;
+}
+
+
+.left{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+
+.left h1{
+      font-size: 1.6rem;
+}
+
+.self h1{
+ font-size: 1rem;
+}
+
+
+.avatar{
+      height: 10rem;
+      width: 10rem;
+      /* border-radius: 50%; */
+}
+
+.avatar img{
+      height:100%;
+      width: 100%; 
+      border-radius: 50%;
+}
+
+.about{
+      margin: 2rem;
+      /* font-size: 10px; */
+}
+
+.about p{
+      font-size: 1.2rem;
+}
+.status{
+      display: grid;
+      margin: 2rem;
+      grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+}
+
+.status-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
